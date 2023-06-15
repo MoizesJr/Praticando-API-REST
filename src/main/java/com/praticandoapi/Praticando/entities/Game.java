@@ -28,7 +28,11 @@ public class Game {
   private String platforms;
   private Double score;
   private String imgUrl;
+
+  @Column(columnDefinition = "TEXT") // anotação utilizada quando se tem mais de 255 caracte..
   private String shortDescription;
+
+  @Column(columnDefinition = "TEXT")
   private String longDescription;
 
   // Com Override ele consegue comparar se os itens da mesma lista são iguais ou
